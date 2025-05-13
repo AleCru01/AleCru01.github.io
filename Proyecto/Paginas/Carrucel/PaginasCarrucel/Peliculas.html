@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,23 +10,112 @@
   <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="Anonymous"></script>
 
-         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Y8IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo6"
+    crossorigin="Anonymous"></script>
 
-         crossorigin="Anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="Anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: linear-gradient(to bottom, #d4ff00, #7cb8f5);
+    }
 
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    .navbar {
+      background-color: #343a40;
+    }
 
-         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9Y8IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo6"
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
 
-         crossorigin="Anonymous"></script>
+    .dropdown-menu {
+      background-color: #343a40;
+    }
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    .dropdown-item {
+      color: #ffffff !important;
+    }
 
-         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    .dropdown-item:hover {
+      background-color: orangeRed !important;
+    }
 
-         crossorigin="Anonymous"></script>
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffffffcc;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #73b6e2;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #6a1b9a;
+    }
+
+    section.intro {
+      text-align: center;
+      padding: 30px 15%;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      background-color: #fff8;
+      border-radius: 20px;
+      margin: 30px 10%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding: 40px 10%;
+    }
+
+    .map-card {
+      background: #ffffffcc;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .map-card:hover {
+      transform: scale(1.03);
+    }
+
+    .map-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+
+    .map-card h3 {
+      text-align: center;
+      margin: 15px 0 10px;
+      color: #9a981b;
+    }
+
+    .map-card p {
+      padding: 0 20px 20px;
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
 
   <header data-bs-theme="dark">
@@ -38,7 +128,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav_dark">
           <ul class="navbar-nav">
-            
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Temporadas y contenido extra</a>
@@ -70,9 +160,74 @@
       </div>
     </nav>
   </header>
-  
 
-    
+  <!--secciones-->
+
+  <header>
+    <h1>Peliculas</h1>
+
+  </header>
+
+  <section class="intro">
+    <p>
+      Bob esponja ha tenido varias peliculas, desde la primera en el 2004 hasta la mas reciente en el 2020, todas han
+      tenido un gran exito
+      y han sido muy bien recibidas por los fans de la serie. La primera pelicula fue un gran exito y tuvo una secuela
+      en el 2015, la cual
+      fue un gran exito en taquilla. La tercera pelicula fue lanzada en el 2020 y fue un gran exito en taquilla,
+      recibiendo criticas
+    </p>
+  </section>
+
+
+
+  <section class="map-gallery">
+    <a href="https://www.imdb.com/es/title/tt0345950/" target="_blank" rel="noopener noreferrer">
+      <div class="map-card">
+        <img src="../../../Imagenes/Pelicula2004.png" alt="Mapa Capítulo 1">
+      </div>
+    </a>
+    <section class="intro">
+      <h1>Bob Esponja, la película (2004)</h1> <br><br><br>
+      <p>
+        La pelicula de Bob Esponja fue lanzada en el 2004 y fue un gran exito en taquilla, recibiendo criticas
+        positivas por parte de los fans y la critica. La pelicula sigue a Bob Esponja y sus amigos mientras intentan
+        recuperar la corona de su rey, la cual fue robada por el malvado Plankton. 
+      </p>
+    </section>
+    <a href="https://www.imdb.com/es/title/tt2279373/" target="_blank" rel="noopener noreferrer">
+      <div class="map-card">
+        <img src="../../../Imagenes/Pelicula2015.png" alt="Mapa Capítulo 2">
+      </div>
+    </a>
+    <section class="intro">
+      <p>
+        Bob esponja ha tenido varias peliculas, desde la primera en el 2004 hasta la mas reciente en el 2020, todas han
+        tenido un gran exito
+        y han sido muy bien recibidas por los fans de la serie. La primera pelicula fue un gran exito y tuvo una secuela
+        en el 2015, la cual
+        fue un gran exito en taquilla. La tercera pelicula fue lanzada en el 2020 y fue un gran exito en taquilla,
+        recibiendo criticas
+      </p>
+    </section>
+    <a href="https://www.imdb.com/es/title/tt4823776/" target="_blank" rel="noopener noreferrer">
+      <div class="map-card">
+        <img src="../../../Imagenes/Pelicula2020.png" alt="Mapa Capítulo 3">
+      </div>
+    </a>
+    <section class="intro">
+      <p>
+        Bob esponja ha tenido varias peliculas, desde la primera en el 2004 hasta la mas reciente en el 2020, todas han
+        tenido un gran exito
+        y han sido muy bien recibidas por los fans de la serie. La primera pelicula fue un gran exito y tuvo una secuela
+        en el 2015, la cual
+        fue un gran exito en taquilla. La tercera pelicula fue lanzada en el 2020 y fue un gran exito en taquilla,
+        recibiendo criticas
+      </p>
+    </section>
+  </section>
+
 
 </body>
+
 </html>
