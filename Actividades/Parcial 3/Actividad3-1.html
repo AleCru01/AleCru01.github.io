@@ -26,32 +26,30 @@
         th {
             background: #f0e6cc;
         }
+
+        th:hover {
+            background-color: darkred;
+        }
     </style>
 </head>
 
 <body>
     <h1>Unidad 3 | Actividad 03-1:: tema (JavaScript)</h1>
     Creacion de tablas automaticas
-    <table>
-        <tbody>
-            <tr>
-                <td>No.</td>
-                <td>Suma</td>
-                <td>Multiplicacion</td>
-            </tr>
-            <script>
-                let numero = Number(prompt("Dime el numero para hacer la tabla de multiplicar: "))
-                let i = 10;
-                if (numero <= 10) {
-                    for (i = 1; i <= 10; i++) {
-                        document.write("<tr><td>" + i + "</td><td>"+ numero + " + " + i + " = " + (numero+i) + "</td><td>"+ numero + " x " + i + " = " + (numero*i) + "</td></tr>")
-                    }
-                } else {
-                    alert("Numero invalido")
-                }
-            </script>
-        </tbody>
-    </table>
+
+    <script>
+        let numero = Number(prompt("Dime el numero para hacer la tabla de multiplicar: "))
+        let i = 10;
+        if (numero <= 10) {
+            document.write("<table>");
+            document.write("<tr><td>No.</td><td>Suma</td><td>Multiplicacion</td></tr>");
+            for (i = 1; i <= 10; i++) {
+                document.write("<tr><td>" + i + "</td><td>" + numero + " + " + i + " = " + (numero + i) + "</td><td>" + numero + " x " + i + " = " + (numero * i) + "</td></tr>")
+            }
+        } else {
+            alert("Numero invalido")
+        }
+    </script>
 
 </body>
 
