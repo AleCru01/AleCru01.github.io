@@ -1,27 +1,46 @@
-function funcionControles(){
-    let varCadena = "detalle de los controles";
-    //acceso al formulario
-    let formulario = document.forms["frmControles"];
-    //acceso a los controles
-    let varRadio = formulario.elements["groupRadio"];
-    varCadena += "\nRadio: " + varRadio.value;	
-    let varCheck = formulario.elements["groupCheck"];
-    varCadena += "\nCheck: " + varCheck.value;
-    let varBasic = formulario.elements["selectBasic"];
-    varCadena += "\nSelect: " + varBasic.value;
-    let varMultiple = formulario.elements["selectMultiple"];
-    varCadena += "\nSelect Multiple: ";
+function funcionControles() {
+  let varCadena = "Detalle de los controles:";
+  
+  // Acceso al Formulario
+  let varForm = document.forms["frmControles"];
 
-    //otros controles
-    let varFile = formulario.elements["varFile"];
-    varCadena += "\nFile: " + varFile.value;
-    let varColor = formulario.elements["varColor"];
-    varCadena += "\nColor: " + varColor.value;
-    let varDate = formulario.elements["varDate"];
-    varCadena += "\nDate: " + varDate.value;
-    let varTime = formulario.elements["varTime"];
-    varCadena += "\nTiempo: " + varTime.value;
-    let varWeek = formulario.elements["varWeek"];
-    varCadena += "\nSemana: " + varWeek.value;
-    
+  // Acceso a los controles
+  let varRadio = varForm.elements["groupRadio"]; 
+  varCadena += "\n - Radio: " + varRadio.value;
+
+  let varCheck = varForm.elements["groupCheck"]; 
+  varCadena += "\n - Check: " + varCheck.value;
+
+  let varBasic = varForm.elements["selectBasic"]; 
+  varCadena += "\n - Basic: " + varBasic.value;
+
+  let varMultiple = varForm.elements["selectMultiple"]; 
+  varCadena += "\n - Multiple: " + varMultiple.value;
+
+  // Otros controles
+  let varFile = varForm.elements["varFile"]; 
+  varCadena += "\n - Archivo: " + varFile.value;
+
+  let varColor = varForm.elements["varColor"]; 
+  varCadena += "\n - Color: " + varColor.value;
+
+  let varDate = varForm.elements["varDate"]; 
+  varCadena += "\n - Fecha: " + varDate.value;
+
+  let varTime = varForm.elements["varTime"]; 
+  varCadena += "\n - Tiempo: " + varTime.value;
+
+  let varWeek = varForm.elements["varWeek"]; 
+  varCadena += "\n - Semana: " + varWeek.value;
+
+  let varMonth = varForm.elements["varMonth"]; 
+  varCadena += "\n - Mes: " + varMonth.value;
+
+  let varNumber = varForm.elements["varNumber"]; 
+  varCadena += "\n - Número: " + varNumber.value;
+
+  let varRange = varForm.elements["varRange"]; 
+  varCadena += "\n - Rango: " + varRange.value;
+
+  alert(varCadena);
 }
