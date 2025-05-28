@@ -92,7 +92,7 @@
     }
 
     .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
+      --bd-violet-bg: #2c9df9;
       --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
       --bs-btn-font-weight: 600;
@@ -100,12 +100,12 @@
       --bs-btn-bg: var(--bd-violet-bg);
       --bs-btn-border-color: var(--bd-violet-bg);
       --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-hover-bg: #e0dd28;
+      --bs-btn-hover-border-color: #e0dd28;
       --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
       --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
+      --bs-btn-active-bg: #e0dd28;
+      --bs-btn-active-border-color: #e0dd28;
     }
 
     .bd-mode-toggle {
@@ -117,8 +117,12 @@
     }
 
     .dropdown-item:hover {
-      color: white;
-      background-color: orangeRed;
+      color: rgb(0, 0, 0);
+      background-color: rgb(189, 181, 178);
+    }
+    .costum-navbar {
+      background-color: #2c9df9;
+      color: #ffffff;
     }
   </style>
 
@@ -154,51 +158,51 @@
       <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
         <use href="#circle-half"></use>
       </svg>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      <span class="visually-hidden" id="bd-theme-text">Elige el color</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#sun-fill"></use>
-          </svg>
-          Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+        aria-pressed="false" onclick="document.body.style.backgroundColor='#87ceeb'; document.getElementsByClassName('costum-navbar')[0].style.backgroundColor='#87ceeb'">
+        <svg class="bi me-2 opacity-50" width="1em" height="1em">
+        <use href="#sun-fill"></use>
+        </svg>
+        Azul
+        <svg class="bi ms-auto d-none" width="1em" height="1em">
+        <use href="#check2"></use>
+        </svg>
+      </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#moon-stars-fill"></use>
-          </svg>
-          Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+        aria-pressed="false" onclick="document.body.style.backgroundColor='#ff69b4';  document.getElementsByClassName('costum-navbar')[0].style.backgroundColor='#ff69b4'">
+        <svg class="bi me-2 opacity-50" width="1em" height="1em">
+        <use href="#moon-stars-fill"></use>
+        </svg>
+        Rosa
+        <svg class="bi ms-auto d-none" width="1em" height="1em">
+        <use href="#check2"></use>
+        </svg>
+      </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-          aria-pressed="true">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#circle-half"></use>
-          </svg>
-          Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
+      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+        aria-pressed="true" onclick="document.body.style.backgroundColor=''">
+        <svg class="bi me-2 opacity-50" width="1em" height="1em">
+        <use href="#circle-half"></use>
+        </svg>
+        Auto
+        <svg class="bi ms-auto d-none" width="1em" height="1em">
+        <use href="#check2"></use>
+        </svg>
+      </button>
       </li>
     </ul>
   </div>
 
 
-  <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <header data-bs-theme="light">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top custom-navbar" >
       <div class="container-fluid">
         <a class="navbar-brand" href="../../Portada.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -214,7 +218,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown_2" style="border-top: 5px solid orangeRed;">
                 <a class="dropdown-item" href="PaginasCarrucel/Peliculas.html">Peliculas</a>
                 <a class="dropdown-item" href="PaginasCarrucel/Videojuegos.html">Videojuegos</a>
-                <a class="dropdown-item" href="#">Spin-offs</a>
+                <a class="dropdown-item" href="PaginasCarrucel/Spin-offs.html">Spin-offs</a>
               </div>
             </li>
 
@@ -222,9 +226,8 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_3" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Elementos clave</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown_3" style="border-top: 5px solid orangeRed;">
-                <a class="dropdown-item" href="#">Trama de la serie</a>
-                <a class="dropdown-item" href="#">Humor de la serie </a>
-                <a class="dropdown-item" href="#">Referencias culturales</a>
+                <a class="dropdown-item" href="PaginasCarrucel/Trama.html">Trama de la serie</a>
+                <a class="dropdown-item" href="PaginasCarrucel/Humor.html">Humor de la serie </a>
               </div>
             </li>
 
@@ -232,7 +235,7 @@
               <a class="nav-link" href="../mapas.html">Lugares Iconicos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Personajes Principales</a>
+              <a class="nav-link" href="../Carrucel/PaginasCarrucel/Personajes.html">Personajes Principales</a>
             </li>
           </ul>
         </div>
@@ -356,7 +359,7 @@
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+     
     </footer>
   </main>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

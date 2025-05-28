@@ -21,27 +21,22 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="Anonymous"></script>
   <style>
-    .animaciones {
-      margin-top: 200px;
-      height: 200px;
-      width: 200px;
+    .costume-navbar {
+      background-color: #fbc2eb;
     }
-    .animaciones:hover {
-      animation: bounce 0.5s;
-      animation-play-state: running;
-    }
-    
-    ol {
-      margin-top: 50px;
-      list-style: none;
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background:  #fbc2eb;
+      color: #333;
     }
   </style>
 </head>
 
 <body>
 
-  <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <header data-bs-theme="light">
+    <nav class="navbar navbar-expand-md fixed-top costume-navbar ">
       <div class="container-fluid">
         <a class="navbar-brand" href="../../../Portada.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -67,7 +62,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown_3" style="border-top: 5px solid orangeRed;">
                 <a class="dropdown-item" href="Trama.html">Trama de la serie</a>
                 <a class="dropdown-item" href="Humor.html">Humor de la serie </a>
-                <a class="dropdown-item" href="ReferenciasCulturales.html">Referencias culturales</a>
+                
               </div>
             </li>
 
@@ -82,14 +77,63 @@
       </div>
     </nav>
   </header>
-  <ol>
-    <li class="animacion"><img src="../../../Imagenes/bobAnimation.png" alt=""></li>
-    <li class="animacion"><img src="" alt=""></li>
-    <li class="animacion"><img src="" alt=""></li>
-    <li class="animacion"><img src="" alt=""></li>
-    <li class="animacion"><img src="" alt=""></li>
-  </ol>
 
+  <!--Personajes-->
+  <style>
+    section {
+      display: flex;
+      width: 100%;
+      height: 430px;
+    }
+    section img{
+      width: 0px;
+      flex-grow: 1;
+      object-fit:  cover;
+      opacity: 0.8;
+      transition: 0.5s ease;
+    }
+    section img:hover {
+      cursor: crosshair;
+      width: 300px;
+      filter: contrast(120%);
+      opacity: 1;
+    }
+    #personaje-info {
+      margin-top: 30px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2em;
+      color: #333;
+      text-align: center;
+      min-height: 40px;
+    }
+  </style>
+  <section>
+    <img src="Personajes/Bob.jpg" alt="Bob Esponja" data-personaje="bob">
+    <img src="Personajes/Patricio.jpg" alt="Patricio Estrella" data-personaje="patricio">
+    <img src="Personajes/Calamardo.jpg" alt="Calamardo Tentáculos" data-personaje="calamardo">
+    <img src="Personajes/Arenita.png" alt="Arenita Mejillas" data-personaje="arenita">
+    <img src="Personajes/Cangrejo.jpg" alt="Don Cangrejo" data-personaje="cangrejo">
+    <img src="Personajes/Planktok.png" alt="Plankton" data-personaje="plankton">
+    <img src="Personajes/gary.jpg" alt="Gary el caracol" data-personaje="gary">
+  </section>
+  <div id="personaje-info"></div>
+  <script>
+    const info = {
+      bob: "Bob Esponja Pantalones Cuadrados es el optimista y trabajador protagonista de la serie. Vive en una piña bajo el mar y trabaja como cocinero en el Crustáceo Cascarudo.",
+      patricio: "Patricio Estrella es el mejor amigo de Bob Esponja. Es una estrella de mar rosa, ingenuo y divertido, que vive bajo una roca.",
+      calamardo: "Calamardo Tentáculos es el vecino y compañero de trabajo de Bob Esponja. Es un calamar gruñón y artístico que toca el clarinete.",
+      arenita: "Arenita Mejillas es una ardilla científica de Texas que vive en Fondo de Bikini usando un traje especial y una cúpula de aire.",
+      cangrejo: "Don Cangrejo es el avaro dueño del Crustáceo Cascarudo. Siempre está buscando maneras de ganar más dinero.",
+      plankton: "Plankton es el principal antagonista de la serie. Es dueño del Balde de Carnada y siempre intenta robar la fórmula secreta de la Cangreburger.",
+      gary: "Gary es el caracol mascota de Bob Esponja. Aunque solo dice 'miau', es muy inteligente y leal."
+    };
+    document.querySelectorAll('section img').forEach(img => {
+      img.addEventListener('click', function() {
+        const personaje = this.getAttribute('data-personaje');
+        document.getElementById('personaje-info').innerHTML = `<h1>${this.alt}</h1> <br><p>${info[personaje]}</p>`;
+      });
+    });
+  </script>
 
 
 

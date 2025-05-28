@@ -22,13 +22,14 @@
     crossorigin="Anonymous"></script>
 
   <style>
-    body{
+    body {
       font-family: 'Poppins', sans-serif;
       /*para el fondo y aparte que se vea boni*/
       background: linear-gradient(to bottom, #efff9d, #9fecfb) no-repeat center center fixed;
       background-size: cover;
     }
-    .contenedor{
+
+    .contenedor {
       display: block;
       justify-content: center;
       align-items: center;
@@ -41,16 +42,19 @@
       padding-top: 20px;
       padding-bottom: 20px;
     }
+
     summary {
       margin-right: 20px;
       margin-left: 20px;
       font-size: 1.5rem;
       color: black;
       margin-bottom: 10px;
-      list-style: none; /* Elimina el asterisco o viñeta predeterminada */
+      list-style: none;
+      /* Elimina el asterisco o viñeta predeterminada */
       text-align: left;
       border-radius: 10px;
     }
+
     details {
       color: #73b6e2;
       background-color: #f8f8f8cc;
@@ -58,19 +62,20 @@
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       text-align: center;
-      
+
     }
+
     details:hover {
       background-color: #ffffff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
+
     details img {
       border-radius: 10px;
       margin-bottom: 10px;
     }
-    
   </style>
-    
+
 </head>
 
 <body>
@@ -102,7 +107,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown_3" style="border-top: 5px solid orangeRed;">
                 <a class="dropdown-item" href="Trama.html">Trama de la serie</a>
                 <a class="dropdown-item" href="Humor.html">Humor de la serie </a>
-                <a class="dropdown-item" href="ReferenciasCulturales.html">Referencias culturales</a>
+
               </div>
             </li>
 
@@ -119,46 +124,131 @@
   </header>
 
   <div class="contenedor">
-    <summary>
-      <details>
-        <summary>SpongeBob SquarePants: Employee of the Month</summary>
-        <img src="../../../Imagenes/Employee of the Month.jpg"
-          alt="SpongeBob SquarePants: Employee of the Month" width="200" height="300">
-        <p>
-          Es un videojuego de plataformas desarrollado por
-          Heavy Iron Studios y publicado por THQ. Fue lanzado para PlayStation 2, GameCube y Xbox en 2002.
-          El juego se basa en la serie de televisión Bob Esponja Pantalones Cuadrados y sigue a Bob Esponja
-          mientras intenta ganar el premio de Empleado del Mes en el Krusty Krab.
-        </p>
-        
-      </details>
-    </summary>
-    <summary>
-      <details>
-        <summary>SpongeBob SquarePants: Revenge of the Flying Dutchman</summary>
-        <img src="../../../Imagenes/Revenge of the Flying Dutchman.jpg"
-          alt="SpongeBob SquarePants: Revenge of the Flying Dutchman" width="200" height="300">
-        <p>
-          Es un videojuego de plataformas desarrollado por
-          TDK Mediactive y publicado por THQ. Fue lanzado para GameCube y Game
-        </p>
-        
-      </details>
-    </summary>
-    <summary>
-      <details>
-        <summary>SpongeBob Squarepants: Battle for Bikini Bottom </summary>
-        <img src="../../../Imagenes/Battle for Bikini Bottom.jpg"
-          alt="SpongeBob SquarePants: BATTLE" width="200" height="300">
-        <p>
-          Es un videojuego de plataformas desarrollado por Heavy Iron Studios y publicado por THQ. Fue lanzado para
-          PlayStation 2, GameCube, Xbox y PC en 2003. El juego se basa en la serie de televisión Bob Esponja
-          Pantalones Cuadrados y sigue a Bob Esponja mientras intenta salvar Fondo de Bikini de la invasión de robots.
-        </p>
-        
-      </details>
-    </summary>
-    
+    <h2 class="text-center mb-4">Videojuegos de Bob Esponja por Plataforma</h2>
+    <div id="plataformasAccordion">
+      <!-- Nintendo -->
+      <div class="card mb-2">
+        <div class="card-header d-flex align-items-center" id="headingNintendo">
+          <img src="https://img.icons8.com/color/32/000000/nintendo-switch-logo.png" alt="Nintendo" class="mr-2" style="width:32px;height:32px;">
+          <h5 class="mb-0 flex-grow-1">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNintendo" aria-expanded="true" aria-controls="collapseNintendo">
+              Nintendo
+            </button>
+          </h5>
+        </div>
+        <div id="collapseNintendo" class="collapse" aria-labelledby="headingNintendo" data-parent="#plataformasAccordion">
+          <div class="card-body text-left">
+            <ul>
+              <li>SpongeBob SquarePants: SuperSponge (GBA, GBC)</li>
+              <li>SpongeBob SquarePants: Battle for Bikini Bottom (GBA, GameCube)</li>
+              <li>SpongeBob SquarePants: The Movie (GBA, GameCube, DS)</li>
+              <li>SpongeBob SquarePants: Lights, Camera, Pants! (GBA, GameCube, DS)</li>
+              <li>SpongeBob SquarePants: Creature from the Krusty Krab (GBA, DS, GameCube, Wii)</li>
+              <li>SpongeBob's Atlantis SquarePantis (GBA, DS, Wii)</li>
+              <li>SpongeBob SquarePants: Truth or Square (DS, Wii)</li>
+              <li>SpongeBob's Boating Bash (DS, Wii)</li>
+              <li>SpongeBob SquigglePants (DS, Wii)</li>
+              <li>SpongeBob HeroPants (3DS)</li>
+              <li>Y muchos más...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- PlayStation -->
+      <div class="card mb-2">
+        <div class="card-header d-flex align-items-center" id="headingPlayStation">
+          <img src="Personajes/play.png" alt="PlayStation" class="mr-2" style="width:32px;height:32px;">
+          <h5 class="mb-0 flex-grow-1">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePlayStation" aria-expanded="false" aria-controls="collapsePlayStation">
+              PlayStation
+            </button>
+          </h5>
+        </div>
+        <div id="collapsePlayStation" class="collapse" aria-labelledby="headingPlayStation" data-parent="#plataformasAccordion">
+          <div class="card-body text-left">
+            <ul>
+              <li>SpongeBob SquarePants: SuperSponge (PS1)</li>
+              <li>SpongeBob SquarePants: Battle for Bikini Bottom (PS2)</li>
+              <li>SpongeBob SquarePants: The Movie (PS2)</li>
+              <li>SpongeBob SquarePants: Lights, Camera, Pants! (PS2)</li>
+              <li>SpongeBob SquarePants: Creature from the Krusty Krab (PS2)</li>
+              <li>SpongeBob SquarePants: Truth or Square (PSP)</li>
+              <li>SpongeBob HeroPants (PS Vita)</li>
+              <li>SpongeBob SquarePants: Battle for Bikini Bottom – Rehydrated (PS4)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Xbox -->
+      <div class="card mb-2">
+        <div class="card-header d-flex align-items-center" id="headingXbox">
+          <img src="https://img.icons8.com/color/32/000000/xbox.png" alt="Xbox" class="mr-2" style="width:32px;height:32px;">
+          <h5 class="mb-0 flex-grow-1">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseXbox" aria-expanded="false" aria-controls="collapseXbox">
+              Xbox
+            </button>
+          </h5>
+        </div>
+        <div id="collapseXbox" class="collapse" aria-labelledby="headingXbox" data-parent="#plataformasAccordion">
+          <div class="card-body text-left">
+            <ul>
+              <li>SpongeBob SquarePants: Battle for Bikini Bottom (Xbox)</li>
+              <li>SpongeBob SquarePants: The Movie (Xbox)</li>
+              <li>SpongeBob SquarePants: Lights, Camera, Pants! (Xbox)</li>
+              <li>SpongeBob SquarePants: Creature from the Krusty Krab (Xbox)</li>
+              <li>SpongeBob SquarePants: Battle for Bikini Bottom – Rehydrated (Xbox One, Xbox Series X/S)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- PC -->
+      <div class="card mb-2">
+        <div class="card-header d-flex align-items-center" id="headingPC">
+          <img src="https://img.icons8.com/color/32/000000/windows-10.png" alt="PC" class="mr-2" style="width:32px;height:32px;">
+          <h5 class="mb-0 flex-grow-1">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePC" aria-expanded="false" aria-controls="collapsePC">
+              PC
+            </button>
+          </h5>
+        </div>
+        <div id="collapsePC" class="collapse" aria-labelledby="headingPC" data-parent="#plataformasAccordion">
+          <div class="card-body text-left">
+            <ul>
+              <li>SpongeBob SquarePants: Employee of the Month</li>
+              <li>SpongeBob SquarePants: Battle for Bikini Bottom</li>
+              <li>SpongeBob SquarePants: The Movie</li>
+              <li>SpongeBob SquarePants: Lights, Camera, Pants!</li>
+              <li>SpongeBob SquarePants: Creature from the Krusty Krab</li>
+              <li>SpongeBob SquarePants: Operation Krabby Patty</li>
+              <li>SpongeBob SquarePants: Battle for Bikini Bottom – Rehydrated</li>
+              <li>SpongeBob SquarePants: The Cosmic Shake</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Otros -->
+      <div class="card mb-2">
+        <div class="card-header d-flex align-items-center" id="headingOtros">
+          <img src="https://img.icons8.com/color/32/000000/controller.png" alt="Otros" class="mr-2" style="width:32px;height:32px;">
+          <h5 class="mb-0 flex-grow-1">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOtros" aria-expanded="false" aria-controls="collapseOtros">
+              Otros / Multiplataforma
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOtros" class="collapse" aria-labelledby="headingOtros" data-parent="#plataformasAccordion">
+          <div class="card-body text-left">
+            <ul>
+              <li>SpongeBob SquarePants: The Cosmic Shake (Switch, PS4, Xbox One, PC)</li>
+              <li>SpongeBob's Truth or Square (DS, PSP, Wii, Xbox 360)</li>
+              <li>SpongeBob's Boating Bash (DS, Wii, PSP)</li>
+              <li>SpongeBob HeroPants (3DS, PS Vita, Xbox 360)</li>
+              <li>Y más juegos en móviles y otras plataformas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
