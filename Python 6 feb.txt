@@ -1,0 +1,3 @@
+En Python no haya más de una instrucción por línea, esta prohibido
+
+argumentos de palabras clave. El nombre proviene del hecho de que el significado de estos argumentos se toma no de su ubicación (posición) sino de la palabra especial (palabra clave) utilizada para identificarlos.
