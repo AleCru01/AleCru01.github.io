@@ -35,5 +35,25 @@ Tipos de transmisión:
 	+Señales Ópticas	(cable fibra)
 	+Señales Inhálambricas	(ondas infrarrojas, de microondas o de radio)
 
+Latencia -> cantidad de tiempo en transmitir información
 
+Tipos de datos::::
 
++Voluntarios (dados por el usuario)
++Observados  (recopilados por el sistema)
++Inferidos   (Análisis de los datos observados)
+
+Ancho de banda -> Capacidad de mandar datos 
+
+Miles (Kbps)
+Millones (Mbps)
+Miles de millones (Gbps)
+
+///////////////////////// MODULO 2 ////////////////////////////////
+
+Peer to Peer (P2P) -> Red entre pares (todas las computadoras pueden participar como cliente y servidor
+
+Algunas aplicaciones P2P utilizan un sistema híbrido donde se descentraliza el intercambio de recursos, pero los índices que apuntan a las ubicaciones de los recursos 
+están almacenados en un directorio centralizado. En un sistema híbrido, cada punto accede a un servidor de índice para obtener la ubicación de un recurso almacenado en otro punto.
+
+Los servidores son hosts con software instalado que les permite proporcionar información, por ejemplo correo electrónico o páginas Web, a otros hosts de la red.

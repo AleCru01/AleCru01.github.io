@@ -1,0 +1,29 @@
+Apuntes curso de introducción ciberseguridad:
+
+El McCumber Cube es un marco modelo creado por John McCumber en 1991 para ayudar a las organizaciones a establecer y evaluar iniciativas de seguridad de la información al considerar todos los factores relacionados que las afectan. Este modelo de seguridad tiene tres dimensiones:
+
+1.-Los principios fundamentales para proteger los sistemas de información.
+2.-La protección de la información en cada uno de sus estados posibles.
+3.-Las medidas de seguridad utilizadas para proteger los datos.
+
+Principios fundamentales:
+La confidencialidad	-> Cifrado de datos y control de acceso
+La integridad	->  Protección para modificaciones no deseadas
+La disponibilidad	-> usuarios autorizados pueden acceder a los sistemas
+
+
+TIPOS DE MALWARE:
+- Spyware: Espía tu actividad digital
+- Adware: Muestra publicidad no deseada
+- Puerta trasera: Acceso oculto al sistema
+- Ransomware: Secuestra datos por rescate
+- Scareware: Alarma falsa para engañar
+- Rootkit: Oculta procesos maliciosos
+- Virus: Infecta y daña archivos
+- Troyano: Finge ser software legítimo
+- Gusanos: Se propagan automáticamente en red
+
+- ISR 4000: enrutador con filtrado, IPS, cifrado y VPN.
+- Firepower 4100: firewall avanzado con análisis de red.
+- AnyConnect: VPN segura para acceso remoto.
+- AMP: protección contra malware en múltiples dispositivos.

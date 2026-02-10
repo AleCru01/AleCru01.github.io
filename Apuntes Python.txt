@@ -1,0 +1,25 @@
+Apuntes Python :
+
+Partes de un lenguaje: 
+
++Alfabeto
++Léxico
++Sintaxis
++Semantica
+
+Lenguaje de alto nivel -> parecido al lenguaje humano
+
+Tipos de ejecución: 
+
+Compilados -> Convertido a lenguaje maquina una vez 
+Interpretado -> Se ejecuta en el momento que quieras usarlo
+
+ Guido van Rossum -> creador de Python
+
+Hay varias variantes de Python
+
+Cython 
+Jython
+pypy
+MicroPython
+
