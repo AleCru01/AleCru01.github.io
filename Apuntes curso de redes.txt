@@ -57,3 +57,29 @@ Algunas aplicaciones P2P utilizan un sistema híbrido donde se descentraliza el 
 están almacenados en un directorio centralizado. En un sistema híbrido, cada punto accede a un servidor de índice para obtener la ubicación de un recurso almacenado en otro punto.
 
 Los servidores son hosts con software instalado que les permite proporcionar información, por ejemplo correo electrónico o páginas Web, a otros hosts de la red.
+
+
+Infrestructura de red (3 partes)
+
++Dispositivos finales  (PC, LAP ETC) 			-> HOST
++Dispositivos intermedio (ROUTERS, SWITCH ETC)		->
++medios de red (LAN, WAN e inalámbricos)
+
+
+Proveedor de Servicios de Internet (ISP)
+
+Tipos de conexiones
+
++Cable (coaxial tipo televisión)
++DLS (cable con 3 puertos -voz y llamadas, -recibir info de internet, -subir info a internet)
+
+///////////////////////// MODULO 3 ////////////////////////////////
+
+ SSID -> nombre asignado a una red inalámbrica.
+
+NFC -> Near Field Communication (comunicación de campo cercano)
+
+vimos que es WIFI, GPS, NFC y bluethoo
+
+///////////////////////// MODULO 4 ////////////////////////////////
+
