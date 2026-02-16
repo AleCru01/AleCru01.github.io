@@ -79,7 +79,136 @@ Tipos de conexiones
 
 NFC -> Near Field Communication (comunicación de campo cercano)
 
-vimos que es WIFI, GPS, NFC y bluethoo
+vimos que es WIFI, GPS, NFC y bluethooth
 
 ///////////////////////// MODULO 4 ////////////////////////////////
+Tipos de redes domesticas -> pública (hecha por el ISP)	
+local (se gestiona con el modem y son todos los puertos LAN y también se les asigna la misma IP
 
+Red de Area Local Inalámbrica (WLAN) 
+
+Tecnología LAN inalámbrica -> IEEE 802.11
+
+conectores RJ-45 -> los conectores que están en los cables de internet
+
+cable utp 
+
+Tecnologías para cableado
++Cable categoría 5e -> 4 pares de hilos entre lasados 
++cable coaxial -> los de las antenas viejitas 
++fibra óptica -> lamina de vidrio o plástico que transmiten 
+
+Frecuencias 
+
+-WIFI (2.4Ghz - 5Ghz)
+-Bluethooth (2.4 GHz)
+-Redes móviles (900 MHz)
+
+Instituto de Ingenieros Eléctricos y Electrónicos (IEEE)
+
+IEEE 802.11 rige el entorno WLAN
+
+Configuración de las redes:
++Modo de red -> define que tipo de estándar se usara (802.11b, 802.11g,802.11n o Modo Mixto)
+		Se refiere a los estándares de tecnología de redes Wi-Fi.
+		Los números indican diferentes versiones de la tecnología, cada una con distintas velocidades y 		capacidades.
++Nombre de la red (SSID)
++Canal estándar -> se refiere al medio específico utilizado para la transmisión de datos en redes inalámbricas.
+		   Permite que los dispositivos se comuniquen entre sí sin interferencias de otros canales.
+		   La configuración "Auto" ayuda a optimizar el rendimiento al seleccionar automáticamente el 			   canal más adecuado.
++Difusión del SSID -> Nos dice si será visible la red o no
+
+///////////////////////// MODULO 5 ////////////////////////////////
+
+Características de los protocolos:
+- Formato del mensaje → estructura definida
+- Tamaño del mensaje → longitud permitida
+- Sincronización → coordinación temporal
+- Codificación → traducción de datos
+- Encapsulamiento → inclusión en capas
+- Patrón del mensaje → orden de intercambio
+
+Aunque nosotros vemos la red como un mapa con dispositivos conectados, cada equipo solo “sabe” su propia información. Para que todo funcione, los protocolos actúan como reglas de comunicación y los servicios de direccionamiento (IP y DNS) hacen posible que los datos lleguen al lugar correcto, igual que un directorio que traduce nombres en direcciones.
+
+
+El IETF publica estándares de Internet conocidos como RFC.
+
+Protocolos de internet:
+
+- Ethernet/Wi-Fi (capa de acceso) → conexión física.
+- IP (capa de red) → direccionamiento y enrutamiento.
+- TCP (capa de transporte) → fiabilidad y orden. (
+- HTTP (capa de aplicación) → interacción con el usuario (páginas web).
+
+Modelo TCP/IP -> Modelo estadarizado para integrar todos los demás protocolos antes mencionados 
+
+Capas del TCP/IP:
+ 
++Aplicación	-> HTTPS y otros protocolos para el usuario final
++Transporte 	-> TCP y UDP para garantizar la entrega de los datos
++Internet 	-> IP (direccionamiento de los datos entre redes)
++Acceso a la red-> Datos que se transmiten físicamente ya sea WIFI, Ethernet o PPP
+
+
+Tipos de modelos:
++Modelo de protocolo (Dice específicamente como se tiene que hacer) : TCP/IP
++Modelo de referencia (solo dicen los pasos que se deberían cumplir pero no como) : Modelo OSI  
+
+Modelo OSI (capas) : 
+
++Aplicacion
++Presentacion
++Sesión
++Transporte
++Red
++Enlace Datos
++Física
+
+
+Los enrutadores utilizan el protocolo de Internet (IP) para reenviar mensajes.
+
+https://static.platzi.com/media/user_upload/diferencias%20modelos%20tcp%20-%20osi-226ebd4f-bb5e-41f1-9e5c-140cb7f69abc.jpg
+
+
+///////////////////////// MODULO 6 ////////////////////////////////
+
+- EMI (Electromagnetic Interference) → interferencia electromagnética, causada por campos eléctricos o magnéticos cercanos
+- RFI (Radio Frequency Interference) → interferencia de radiofrecuencia, causada por señales inalámbricas que se cruzan
+
+- RFI (Radio Frequency Interference) → interferencia de radiofrecuencia, causada por señales inalámbricas que se cruzan
+///////////////////////// MODULO 7 ////////////////////////////////
+
+Tarjeta de Interfaz de red (NIC)
+
+estructura de una trama Ethernet -> cómo se organiza la información cuando se transmite por una red local (LAN).
+
+Tiene un cierto numero de pasos para transmitir en la misma network, este tiene un tamaño mínimo y max para identificar y transmitir de mejor manera la información.
+
++Preamble (7 bytes) -> Es como el “aviso” de que viene un mensaje. (baja la información por medio de la tarjeta de red)
+
++Start Frame Delimiter (1 byte) -> Indica al receptor dónde empieza la información útil.
+
++- Destination MAC Address (6 bytes) -> Dirección física del dispositivo de destino.
+
++- Source MAC Address (6 bytes) -> Dirección física del dispositivo que envía la trama.
+
++Length/Type (2 bytes) -> - Indica el tamaño de los datos o el tipo de protocolo que se está transportando (por ejemplo, IPv4 o IPv6).
+
++Data (46–1500 bytes) -> Mensaje
+
++- Frame Check Sequence (4 bytes) -> - Campo de verificación de errores (CRC).
+
+Cada mensaje de computadora se encapsula en un formato específico, llamado trama
+
+La encapsulación es el proceso de anteponer información de un protocolo con información de otro protocolo.
+
+Ethernet opera en la capa 2, la capa de enlace de datos del modelo OSI.
+
+Los switches crean tablas de direcciones MAC para saber que dispositivos están conectados en que puertos, así cuando mandan un mensaje se sabe a que puerto redirigir. esto se va creando con la interacción de los host.
+
+
+Cuando un conmutador recibe una trama de Ethernet y la dirección MAC de destino de esa trama no está en su tabla de direcciones MAC, el conmutador reenviará la trama a todos los puertos excepto al puerto de entrada.
+
+Los concentradores de ethernet se consideran obsoletos porque solo pueden hacer 1 petición o conexión a la vez
+
+IPv4 tienen 32 bits de longitud. 
